@@ -23,3 +23,70 @@
     padding: 0 16px;
     /* background-color: rgba(0,0,255,0.2); */
 }
+
+/* sub 공통 */
+.sub-visual{
+    margin-top: 100px;
+    &.bg-img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.news{
+            background-image: url(../images/sub-visual-news.png);
+        }
+        &.ir{
+            background-image: url(../images/sub-visual-ir.png);
+        }
+        &.product{
+            background-image: url(../images/sub-visual-product.png);
+        }
+        &.recruit{
+            background-image: url(../images/sub-visual-recruit.png);
+        }
+    }
+    .inner{
+        max-width: 1600px;
+        height: 430px;
+    }
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 72px;
+        h2{
+            color: var(--main-color);
+            font-size: 6.4rem;
+            font-weight: 900;
+        }
+        .desc{
+            color: #fff;
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+}
+.sub-section-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 100px 0 50px;
+}
+.sub-section-title h3{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+.sub-section-title .desc{
+    color: var(--color--gray);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.sub-section-title strong{
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
