@@ -1,3 +1,5 @@
+@import url(../fonts/pretendard.css);
+
 :root{
     /* 메인컬러 */
     --main-color:#f13737;
@@ -14,7 +16,6 @@
     /* 모서리 둥글기 */
     --large-radius:10rem;
     --middle-radius:4rem;
-    
 }
 
 .inner{

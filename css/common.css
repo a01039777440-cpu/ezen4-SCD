@@ -55,7 +55,7 @@ html {
 body {
     font-family: 'Pretendard', sans-serif;
     color: #292929;
-
+    font-size: 1.6rem;
 }
 
 /* rem html에 지정한 폰트가 기준 */
