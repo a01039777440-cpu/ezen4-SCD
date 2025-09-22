@@ -91,3 +91,40 @@
     font-weight: 500;
     line-height: 40px;
 }
+
+
+/********************** plugIn ***************************************/
+
+/* .swiper- */
+.swiper-button-prev,
+.swiper-button-next{
+    width: auto;
+    color: transparent;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    display: none;
+}
+
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 30px;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color);
+    /* opacity: .6; */
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    width: auto;
+    left: 40px;
+    bottom: 100px;
+}
+/* .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{ 
+    margin: 10px;
+} */

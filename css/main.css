@@ -11,23 +11,19 @@
     display: flex;
     width: 400%;
 }
-
-/* .arrow-btn {} */
-
 .arrow-btn>li>a {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .arrow-btn>.arrow-left>a {
     left: 20px;
-    /* border: 1px solid blue; */
 }
 
 .arrow-btn>.arrow-right>a {
     right: 20px;
-    /* border: 1px solid red; */
 }
 
 .pager-btn {
@@ -36,6 +32,7 @@
     gap: 2rem;
     left: 20px;
     bottom: 5rem;
+    z-index: 1;
 }
 
 .pager-btn>li>a {
@@ -60,6 +57,7 @@
     align-items: center;
     gap: 10px;
     animation: scrollAni 2s infinite alternate;
+    z-index: 1;
 }
 
 @keyframes scrollAni {
