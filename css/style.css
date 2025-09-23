@@ -44,6 +44,9 @@
         &.recruit{
             background-image: url(../images/sub-visual-recruit.png);
         }
+        &.rnd{
+            background-image: url(../images/sub-visual-rnd.png);
+        }
     }
     .inner{
         max-width: 1600px;
