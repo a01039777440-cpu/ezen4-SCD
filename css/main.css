@@ -292,6 +292,19 @@ section {
     width: 80%;
     border-radius: 4rem;
 }
+.video-control-btn-wrap {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.video-control-btn-wrap>.control-btn-list{
+    display: flex;
+}
+.video-control-btn-wrap>.control-btn-list>.playPause{}
+.video-control-btn-wrap>.control-btn-list>.stop-btn{}
+.video-control-btn-wrap>.control-btn-list>.prev-btn{}
+.video-control-btn-wrap>.control-btn-list>.next-btn{}
+
 
 /* .latest-news-wrap {} */
 
