@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>삼천당</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- scd CSS -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header-footer.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/respond.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- scd JS -->
     <script defer src="./js/main.js"></script>
     <script async src="./js/header-footer.js"></script>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="skip">
@@ -28,26 +34,25 @@
             <!-- 2-1 main slider -->
             <div class="main-slider-wrap">
                 <h2 class="blind">메인 슬라이드</h2>
-                <div class="main-slider">
-                    <ul class="slider-list">
-                        <li><a href="#void"><img src="./images/main-slid-1.png" alt="연구시설1"></a></li>
-                        <li><a href="#void"><img src="./images/main-slid-2.png" alt="어린이가뛰어노는모습"></a></li>
-                        <li><a href="#void"><img src="./images/main-slid-3.png" alt="연구시설2"></a></li>
-                        <li><a href="#void"><img src="./images/main-slid-4.png" alt="단란한 가족"></a></li>
+                <div class="main-slider swiper">
+                    <ul class="slider-list swiper-wrapper">
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-1.png" alt="연구시설1"></a></li>
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-2.png" alt="어린이가뛰어노는모습"></a></li>
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-3.png" alt="연구시설2"></a></li>
+                        <li class="swiper-slide"><a href="#void"><img src="./images/main-slid-4.png" alt="단란한 가족"></a></li>
                     </ul>
                 </div>
-                <ul class="arrow-btn">
-                    <li class="arrow-left"><a href="#"><img src="./images/slider-left-btn.png" alt="left arrow"></a>
-                    </li>
-                    <li class="arrow-right"><a href="#"><img src="./images/slider-right-btn.png" alt="right arrow"></a>
-                    </li>
-                </ul>
-                <ul class="pager-btn">
+                <!-- 좌우 화살표 -->
+                <div class="swiper-button-prev"><a href="#void"><img src="./images/slider-left-btn.png" alt="왼쪽으로"></a></div>
+                <div class="swiper-button-next"><a href="#void"><img src="./images/slider-right-btn.png" alt="오른쪽으로"></a></div>
+                <!-- pager -->
+                <div class="swiper-pagination"></div>
+                <!-- <ul class="pager-btn">
                     <li class="active"><a href="#void"></a></li>
                     <li><a href="#void"></a></li>
                     <li><a href="#void"></a></li>
                     <li><a href="#void"></a></li>
-                </ul>
+                </ul> -->
                 <div class="scroll-wrap">
                     <div class="scroll"><span></span></div>
                     <p>scroll down</p>
@@ -138,7 +143,15 @@
                             <p><img src="./images/icon-pill.svg" alt="아이콘"></p>
                             <p class="movie-more"><a href="#">기업홍보 바로가기</a></p>
                         </div>
-                        <video src="./video/youtube.mp4"></video>
+                        <video class="video" src="./video/youtube.mp4"></video>
+                        <div class="video-control-btn-wrap">
+                            <ul class="control-btn-list">
+                                <li class="playPause"><a href="#void"></a></li>
+                                <li class="stop-btn"><a href="#void"><img src="./images/stop.svg" alt="stop"></a></li>
+                                <li class="prev-btn"><a href="#void"><img src="./images/backward.svg" alt="backward"></a></li>
+                                <li class="next-btn"><a href="#void"><img src="./images/forward.svg" alt="forward"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
