@@ -30,11 +30,24 @@ var swiper = new Swiper(".main-slider", {
 
 // 프로모션 비디오 컨트롤
 let mainVideo = document.querySelector(".promotion-movie video");
+let controlList = document.querySelector(".video-control-btn-wrap");
+let bigBtn = document.querySelector(".bigPlayBtn");
 let playPause = document.querySelector(".playPause");
 let stopBtn = document.querySelector(".stop-btn");
 let prevBtn = document.querySelector(".prev-btn");
 let nextBtn = document.querySelector(".next-btn");
 
+bigBtn.addEventListener("click", function () {
+        mainVideo.play(),
+        this.style.display="none",
+        controlList.style.display="block"
+        playPause.classList.add("active");
+})
+mainVideo.addEventListener("ended", function () {
+    bigBtn.style.display="block",
+    controlList.style.display="none"
+    this.currentTime = 0;
+})
 playPause.addEventListener("click", function () {
     if (mainVideo.paused) {
         mainVideo.play(),

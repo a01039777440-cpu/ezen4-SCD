@@ -293,9 +293,16 @@ section {
     border-radius: 4rem;
 }
 .video-control-btn-wrap {
+    display: none;
     position: absolute;
     right: 5%;
     bottom: 5%;
+}
+.bigPlayBtn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
 }
 .video-control-btn-wrap>.control-btn-list{
     display: flex;
@@ -315,6 +322,7 @@ section {
 .control-btn-list>.playPause.active{   
     background-image: url(../images/pause.svg);
 }   
+
 .control-btn-list>.stop-btn{}
 .control-btn-list>.prev-btn{}
 .control-btn-list>.next-btn{}
