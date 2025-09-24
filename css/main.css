@@ -299,11 +299,25 @@ section {
 }
 .video-control-btn-wrap>.control-btn-list{
     display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 2rem;
 }
-.video-control-btn-wrap>.control-btn-list>.playPause{}
-.video-control-btn-wrap>.control-btn-list>.stop-btn{}
-.video-control-btn-wrap>.control-btn-list>.prev-btn{}
-.video-control-btn-wrap>.control-btn-list>.next-btn{}
+.control-btn-list>li>a{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.control-btn-list>.playPause{
+    background-image: url(../images/play.svg);
+}
+.control-btn-list>.playPause.active{   
+    background-image: url(../images/pause.svg);
+}   
+.control-btn-list>.stop-btn{}
+.control-btn-list>.prev-btn{}
+.control-btn-list>.next-btn{}
 
 
 /* .latest-news-wrap {} */
