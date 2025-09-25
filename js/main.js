@@ -11,7 +11,7 @@ quickBtns.forEach(qBtn => {
 
 // 최상단 슬라이더
 var swiper = new Swiper(".main-slider", {
-    // effect:"fade",
+    effect:"fade",
     loop: true,
     autoplay: {
         delay: 3000,

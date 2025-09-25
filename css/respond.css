@@ -1,47 +1,10 @@
 /* 1280 */
 @media screen and (max-width:1280px) {
-
-    /* 1.제거하기 */
-    nav {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        top: 0;
-        left: -100%;
-        z-index: 100;
-    }
-
     .main-menu {
-        display: block;
-        width: 70%;
-        height: 100%;
-        max-width: 700px;
-        background: #fff;
-        text-indent: 3rem;
+        display: flex;
+        gap: 5rem;
     }
 
-    .main-menu>li::after {
-        left: 0;
-        transform: translateX(0);
-
-    }
-
-    .main-menu>li>a {
-        border-bottom: 1px solid #ddd;
-        background: url(../images/icon-down.svg) no-repeat 90% center;
-    }
-
-    .main-menu>.active>a {
-        background-image: url(../images/icon-up.svg);
-    }
-
-    .depth1 {
-        /* display: block; */
-        position: static;
-        text-indent: 50px;
-        line-height: 2;
-    }
 
     /* 2.보이기 */
     .footer-logo img {
@@ -71,6 +34,18 @@
         padding: 6rem;
         font-size: 1.6rem;
     }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 32px;
+        height: 12px;
+        border-radius: 12px;
+    }
+
 }
 
 @media screen and (max-width:1128px) {
@@ -104,6 +79,67 @@
 
     .footer .inner {
         padding: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width:1028px) {
+
+    /* 1.제거하기 */
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        left: 0;
+        /* left: -100%; */
+        z-index: 100;
+
+    }
+    .closeBtn{
+        display: block;
+    }
+    .main-menu {
+        display: block;
+        width: 70%;
+        height: 100%;
+        max-width: 700px;
+        min-width: 320px;
+        background: #fff;
+        overflow-y: auto;
+    }
+    .main-menu:after {
+        display: none;
+    }
+
+    .main-menu:hover>li::after {
+        display: none;
+    }
+
+    .main-menu>li>a::after {
+        display: none;
+    }
+
+    .main-menu>li>a {
+        line-height: 5rem;
+        border-bottom: 1px solid #ddd;
+        background: url(../images/icon-down.svg) no-repeat 90% center;
+    }
+
+    .main-menu>.active>a {
+        background-image: url(../images/icon-up.svg);
+    }
+
+    .depth1 {
+        display: block;
+        position: static;
+        line-height: 2;
+        transform: unset;
+        text-indent: 1.2rem;
+    }
+
+    .gnb-wrap .gnb-list .ham-btn {
+        display: block;
     }
 }
 
@@ -209,6 +245,18 @@
     .footer-right>.footer-menu {
         gap: 2rem;
     }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* .swiper- */
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -255,43 +303,50 @@
         border-radius: 4rem;
         padding: 4rem;
     }
-    .scd-list>li>a .scd-title span{
+
+    .scd-list>li>a .scd-title span {
         display: block;
     }
 
-    footer .footer-logo img{
+    footer .footer-logo img {
         width: 40vw;
     }
 }
+
 @media screen and (max-width:480px) {
+
     /* 각 섹션 아래 여백 절반 */
-    section{
+    section {
         padding-bottom: 40px;
     }
+
     /* 섹션타이틀 크기 절반 */
-    .section-title{
+    .section-title {
         font-size: 3rem;
     }
+
     /* product안에 제목 : 엘사반정 크기 절반 / 위아래 여백 절반 */
-    .product-list>li .text-box .product-title{
+    .product-list>li .text-box .product-title {
         font-size: 2rem;
         margin: 1.5rem;
     }
-    
+
     /* 뉴스 안쪽 여백 줄이기 / 요소들간에 여백 줄이기 */
     .news-list>li {
         padding: 8rem 3rem;
     }
+
     /* 버튼 60%로 줄이기 */
     .news-list>li .more-btn {
         right: -10px;
     }
-    .more-btn>a>img{
-        width: 80%;        
+
+    .more-btn>a>img {
+        width: 80%;
     }
-    
+
     /* footer 위 하얀 여백 절반 */
-    footer{
+    footer {
         padding-top: 3rem;
     }
 }
