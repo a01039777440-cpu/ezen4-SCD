@@ -4,20 +4,29 @@ fetch('header.html')
     .then(data => {
         document.querySelector('#header').innerHTML = data;
 
-        // 스크립트 
-        // GNB 언어 서브 펼침 이벤트
+        /** 
+         * 스크립트 
+        */
+        // GNB의 언어 서브 펼침 이벤트
         lang = document.querySelector('.lang>a');
-        // langActive = document.querySelector('.lang>a.active');
-        langList = document.querySelector('.lang-list');
-        lang.addEventListener('click', (e) => {
-            lang.classList.add('active');
-            langList.style.display = "block"
-            // langActive.style.border="1px solid black"
+        langText = document.querySelector('.lang-change');
+        lang.addEventListener('click', () => {
+            lang.classList.toggle('active');
         })
-        // langActive.addEventListener('click', (e) => {
-        //     lang.classList.remove('active');
-        //     langList.style.display = "none"
-        // })
+        let langLi = document.querySelectorAll('.lang-list>li');
+        let kor = document.querySelector(".kor");
+        let eng = document.querySelector(".eng");
+        langLi.forEach(item => {
+            item.addEventListener('click', function () {
+                lang.classList.remove('active');
+            });
+        });
+        kor.addEventListener("click", function(){
+            langText.textContent="KOR"
+        })
+        eng.addEventListener("click", function(){
+            langText.textContent="ENG"
+        })
     })
 
 // footer 불러오기

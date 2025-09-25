@@ -474,9 +474,10 @@ section {
 /* aside */
 .aside-menu {
     position: fixed;
-    top: 400px;
+    top: 600px;
     right: 30px;
     font-size: 1.6rem;
+    z-index: 1;
 }
 
 .aside-menu>li {
