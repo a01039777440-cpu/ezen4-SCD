@@ -53,6 +53,24 @@
         font-size: 8px;
     }
 
+    .sub-visual {
+        .inner {
+            height: 320px;
+        }
+
+        .text-box {
+            h2 {
+                font-size: 5rem;
+            }
+
+            .desc {
+                font-size: 2rem;
+            }
+        }
+
+
+    }
+
     .section-title {
         padding: 5rem 0 3rem;
     }
@@ -83,6 +101,17 @@
 }
 
 @media screen and (max-width:1028px) {
+    .sub-section-title {
+        padding-top: 5rem;
+    }
+
+    .sub-section-title h3 {
+        font-size: 4rem;
+
+        .desc {
+            /* font-size: 2.8rem; */
+        }
+    }
 
     /* 1.제거하기 */
     nav {
@@ -96,9 +125,11 @@
         z-index: 100;
 
     }
-    .closeBtn{
+
+    .closeBtn {
         display: block;
     }
+
     .main-menu {
         display: block;
         width: 70%;
@@ -108,6 +139,7 @@
         background: #fff;
         overflow-y: auto;
     }
+
     .main-menu:after {
         display: none;
     }
@@ -157,6 +189,33 @@
 
 /* 768 */
 @media screen and (max-width:768px) {
+
+    .news {
+        .sub-news-list>li>.img-box {
+            display: none;
+        }
+        .sub-news-list>li>a {
+            width: unset!important;
+        }
+    }
+
+    .sub-visual {
+        .inner {
+            height: 320px;
+        }
+
+        .text-box {
+            padding-top: 5rem;
+
+            h2 {
+                font-size: 5rem;
+            }
+
+            .desc {
+                font-size: 2rem;
+            }
+        }
+    }
 
     /* 제거하기 */
     .aside-menu,
@@ -261,7 +320,8 @@
 
 @media screen and (max-width:640px) {
     header {
-        padding: 1rem 0;
+        /* padding: 1rem 0; */
+        /* line-height: 50px; */
     }
 
     .logo {
