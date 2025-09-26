@@ -154,9 +154,9 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <div class="swiper-pagination"></div>
+                                <div class="swiper-pagination product-list-wrap"></div>
                             </div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-next "></div>
                             <div class="swiper-button-prev"></div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
 
                 <!-- Initialize Swiper -->
                 <script>
-                    var swiper = new Swiper(".product-list-wrap .swiper", {
+                    var swiper2 = new Swiper(".product", {
                         loop: true,
                         centeredSlides: true,
                         autoplay: {
@@ -176,7 +176,7 @@
                         slidesPerView: 3,
                         spaceBetween: 20,
                         pagination: {
-                            el: ".swiper-pagination",
+                            el: ".product-list-wrap",
                             clickable: true,
                         },
                         navigation: {
