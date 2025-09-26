@@ -131,7 +131,7 @@ section {
 }
 
 .product-list>li {
-    background: #dfdfdf;
+    background: white;
     border-radius: 44px;
     overflow: hidden;
     /* 0 0 30 : flex-grow flex-shrink flex-basis */
