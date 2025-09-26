@@ -110,8 +110,8 @@
 }
 
 .swiper-pagination-bullet{
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: #fff;
     margin: 30px;
     opacity: 1;
@@ -120,13 +120,13 @@
     background-color: var(--main-color);
     /* opacity: .6; */
     width: 60px;
-    height: 20px;
-    border-radius: 20px;
+    height: 16px;
+    border-radius: 16px;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal{
     width: auto;
     left: 40px;
-    bottom: 100px;
+    bottom: 10%;
 }
 /* .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{ 
     margin: 10px;
