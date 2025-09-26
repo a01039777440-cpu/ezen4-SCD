@@ -31,6 +31,7 @@ fetch('header.html')
         let hamBtn = document.querySelector('.ham-btn');
         hamBtn.addEventListener("click", function(){
             nav.style.display="block"
+            nav.style.left="0"
         })
         let closeBtn = document.querySelector('.closeBtn');
         let nav = document.querySelector('nav');
