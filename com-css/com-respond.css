@@ -104,6 +104,10 @@
         right: 50px;
     }
 
+    .help .sub-text::after {
+        right: -30px;
+    }
+
     .global .sub-text {
         bottom: 280px;
         left: 110px;
@@ -128,7 +132,7 @@
         width: 90px;
     }
 
-    .accord .active {
+    .accord-list .active {
         width: 550px;
     }
 
@@ -182,7 +186,7 @@
 
     .accord-list>div {
         width: 676px;
-        height: 100px;
+        height: 80px;
         padding-top: 0;
         padding-left: 28px;
         display: flex;
@@ -214,6 +218,7 @@
     }
 
     .accord-list .active {
+        width:676px;
         height: 400px;
         padding: 10px 20px;
     }
@@ -275,7 +280,7 @@
     }
 
     .help .sub-text::after {
-        right: 0px;
+        right: -30px;
     }
 
     .global .sub-text {
@@ -351,7 +356,9 @@
         right: 0;
     }
 
-    .help .sub-text::after {}
+    .help .sub-text::after {
+        right: 0;
+    }
 
     .global .main-text,
     .money .main-text {
@@ -544,8 +551,8 @@
     }
 
     /* vision */
-    .accord-wrap{
-        padding:0 20px;
+    .accord-wrap {
+        padding: 0 20px;
     }
 
     .accord-list {
